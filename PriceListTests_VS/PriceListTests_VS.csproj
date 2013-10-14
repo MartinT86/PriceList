@@ -52,9 +52,14 @@
   </Choose>
   <ItemGroup>
     <Compile Include="HomeControllerTests.cs" />
+    <Compile Include="ListControllerTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Domain\Domain.csproj">
+      <Project>{2f8ed887-b35c-4559-bec8-6acdd8aea5d1}</Project>
+      <Name>Domain</Name>
+    </ProjectReference>
     <ProjectReference Include="..\PriceList\PriceList.csproj">
       <Project>{deee9ecb-685e-448d-9879-38f121bb1023}</Project>
       <Name>PriceList</Name>

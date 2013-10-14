@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace Domain
 {
-    public interface IStoreAndGetList
+    public interface IGetList
     {
         List<string> GetList();
     }

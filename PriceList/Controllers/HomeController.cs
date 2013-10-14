@@ -10,8 +10,6 @@ namespace PriceList.Controllers
 {
     public class HomeController : Controller
     {
-        private IStoreAndGetList _storeAndGetList;
-
         public ActionResult Index()
         {
             ViewBag.Message = "Modify this template to jump-start your ASP.NET MVC application.";
@@ -33,14 +31,6 @@ namespace PriceList.Controllers
             return View();
         }
 
-        public ActionResult List()
-        {
-            ViewBag.Message = "Your contact page.";
-            var model = new ListModel();
-            model.Items.Add("product 1");
-            model.Items.Add("another product");
-
-            return View("List", model);
-        }
+        
     }
 }
