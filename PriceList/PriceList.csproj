@@ -331,6 +331,10 @@
     <Content Include="packages.config" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\Data\Data.csproj">
+      <Project>{f83e02ad-f2da-4b17-963a-20463bceda5a}</Project>
+      <Name>Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\Domain\Domain.csproj">
       <Project>{2f8ed887-b35c-4559-bec8-6acdd8aea5d1}</Project>
       <Name>Domain</Name>

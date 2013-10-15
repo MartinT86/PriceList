@@ -24,8 +24,15 @@ namespace PriceList.Controllers
         {
             ViewBag.Message = "Your contact page.";
             var model = new ListModel();
-            model.Items.Add("product 1");
-            model.Items.Add("another product");
+
+            foreach (var product in _getList.GetList())
+            {
+                model.Items.Add(product);
+            }
+
+
+            //model.Items.Add("product 1");
+            //model.Items.Add("another product");
 
             return View("List", model);
         }
