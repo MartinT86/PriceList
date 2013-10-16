@@ -9,9 +9,9 @@ namespace PriceList.Models
     {
         public ListModel()
         {
-            Items = new List<string>();
+            Items = new List<ListModelItem>();
         }
 
-        public List<string> Items { get; set; }
+        public List<ListModelItem> Items { get; set; }
     }
 }

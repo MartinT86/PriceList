@@ -27,15 +27,20 @@ namespace PriceList.Controllers
 
             foreach (var product in _getList.GetList())
             {
-                model.Items.Add(product);
+                var item = new ListModelItem() { Name = product };
+                model.Items.Add(item);
             }
-
-
-            //model.Items.Add("product 1");
-            //model.Items.Add("another product");
 
             return View("List", model);
         }
+
+        [HttpPost]
+        public ActionResult List(ListModel model)
+        {
+            var test = model;
+            return RedirectToAction("List", "List");
+        }
+
 
         ////
         //// GET: /List/Details/5
